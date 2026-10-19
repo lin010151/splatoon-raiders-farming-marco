@@ -177,8 +177,11 @@ while True:
     # Back (What you got / relic collection if relic)
     tap_button(btn_0=B, release_time=1.5)
 
-    # Back (jump/ What you got if relic)
+    # Back (jump / What you got if relic)
     tap_button(btn_0=B, release_time=1.5)
+
+    # For Weapon Stash full
+    tap_button(btn_0=A, release_time=1.5)
 
     # Open Menu
     tap_button(btn_0=X, release_time=1)
