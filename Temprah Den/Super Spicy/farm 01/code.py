@@ -83,13 +83,16 @@ tap_button(btn_0=A, release_time=1.0)
 # ============================================================
 # 3. INFINITE FARM
 # ============================================================
+
+# Uncomment this line to enable Weapons-scrap. Same after.
+# loop_time=0 
+
 while True:
     # Raid on Super Spicy!
     tap_button(btn_0=A, release_time=2)
     
     # Skip intro
     tap_button(btn_0=A, release_time=6)
-
 
     # Throw gadgets
     tap_button(btn_0=L, release_time=0.05)
@@ -134,14 +137,49 @@ while True:
     # Back (What you got / relic collection if relic)
     tap_button(btn_0=B, release_time=1.5)
 
-    # Back (jump/ What you got if relic)
+    # Back (jump / What you got if relic)
     tap_button(btn_0=B, release_time=1.5)
 
+    # For Weapon Stash full
+    tap_button(btn_0=A, release_time=1.5)
+
     # Open Menu
-    tap_button(btn_0=X, release_time=1)
+    tap_button(btn_0=X, release_time=0.5)
+
+    # ========== Uncomment this section to enable Weapon-scrap ==========
+    # loop_time=loop_time+1
+    # if loop_time==50:
+    #     loop_time=0
+    #     # Select Weapon stash
+    #     tap_button(dpad=DPAD_DOWN, release_time=0.5)
+    #     tap_button(dpad=DPAD_DOWN, release_time=0.5)
+    #     tap_button(dpad=DPAD_DOWN, release_time=0.5)
+    #     tap_button(btn_0=A, release_time=1)
+    #     # Select Scrap Weapons
+    #     tap_button(dpad=DPAD_RIGHT, release_time=0.5)
+    #     tap_button(btn_0=A, release_time=1)
+    #     # Multiselect All weapons except 5-star
+    #     tap_button(btn_0=X, release_time=0.5)
+    #     tap_button(btn_0=A, release_time=0.5)
+    #     tap_button(dpad=DPAD_RIGHT, release_time=0.5)
+    #     tap_button(btn_0=A, release_time=0.5)
+    #     tap_button(dpad=DPAD_RIGHT, release_time=0.5)
+    #     tap_button(btn_0=A, release_time=0.5)
+    #     tap_button(dpad=DPAD_RIGHT, release_time=0.5)
+    #     tap_button(btn_0=A, release_time=0.5)
+    #     tap_button(dpad=DPAD_DOWN, release_time=0.5)
+    #     tap_button(btn_0=A, release_time=0.5)
+    #     # Scrap weapons
+    #     tap_button(btn_1=PLUS, release_time=0.5)
+    #     tap_button(dpad=DPAD_RIGHT, release_time=0.5)
+    #     tap_button(btn_0=A, release_time=5)
+    #     # Return to Menu
+    #     tap_button(btn_0=B, release_time=0.5)
+    #     tap_button(btn_0=X, release_time=0.5)
+    # ========== End Scrap Weapons section ==========
 
     # Select Treasure Map
-    tap_button(btn_0=A, release_time=1)
+    tap_button(btn_0=A, release_time=0.5)
 
     # Select Temprah Den
-    tap_button(btn_0=A, release_time=1)
+    tap_button(btn_0=A, release_time=0.5)
